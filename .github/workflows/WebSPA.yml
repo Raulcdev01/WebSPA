@@ -16,8 +16,6 @@ jobs:
         cache: maven
     - name: Construir con maven
       run: mvn -B package --file pom.xml
-    - name: Entrar a Carpeta target
-      run: cd target
     - name: MOstrar ubicacion War
-      run: echo -e `ls -1`
+      run: echo -e `ls target/`
     
