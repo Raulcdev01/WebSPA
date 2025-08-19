@@ -7,7 +7,6 @@ jobs:
   compilar:
     runs-on: ubuntu-latest
     steps:
-    - name: clonar repositorio
     - uses: actions/checkout@v4
     - name: instalar jdk 11
       uses: actions/setup-java@v4
@@ -17,4 +16,6 @@ jobs:
         cache: maven
     - name: Construir con maven
       run: mvn -B package --file pom.xml
+    - name: Buscar War
+      run: echo -ls -all
     
