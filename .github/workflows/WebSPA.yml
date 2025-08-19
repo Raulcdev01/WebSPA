@@ -17,5 +17,6 @@ jobs:
     - name: Construir con maven
       run: mvn -B package --file pom.xml
     - name: Mostrar ubicacion War
-      run: echo "El war se ha generado en";cd target/;pwd;echo -e `ls target/`
+      #run: echo "El war se ha generado en";cd target/;pwd;echo -e `ls target/`
+      run: echo "El war se ha generado en";cd target/;pwd;echo -e `ls `
     
